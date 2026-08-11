@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnovaIA - Impacto Ambiental de los Residuos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <div class="sidebar-brand">
+        <img src="logo.png" alt="InnovaIA" class="sidebar-logo" />
+        <div class="sidebar-brand-text">
+          <p class="brand-name">InnovaIA</p>
+          <span class="brand-tag">Ciencia y Orden</span>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <h3>Acciones cuentan</h3>
+        <p>Pequeñas decisiones hoy, un planeta mejor mañana.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard">
+      <section class="top-grid">
+        <article class="hero-panel glass">
+          <div class="hero-left">
+            <div class="hero-copy">
+              <span class="hero-chip">BIENVENIDO A</span>
+              <h1>Asistente inteligente para residuos</h1>
+              <p>Descubre cuánto tarda un objeto en degradarse, su impacto ambiental, cómo reutilizarlo y qué hacer para cuidar el planeta.</p>
+            </div>
+
+            <div class="hero-cards">
+              <div class="hero-card">
+                <span>Busca</span>
+                <p>Encuentra datos instantáneos.</p>
+              </div>
+              <div class="hero-card">
+                <span>Aprende</span>
+                <p>Información clara y práctica.</p>
+              </div>
+              <div class="hero-card">
+                <span>Transforma</span>
+                <p>Reutiliza y reduce residuos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="Captura de pantalla 2026-08-10 160002.png" alt="Planeta Tierra" class="hero-visual-image" onerror="this.src='logo.png'" />
+          </div>
+        </article>
+
+        <article class="search-panel glass">
+          <div class="search-header">
+            <div>
+              <span class="hero-chip blue">Busca y <strong>aprende</strong></span>
+              <h2>Escribe el nombre del objeto y obtén información exacta sobre su degradación, impacto y reutilización.</h2>
+            </div>
+            <div class="user-badge">
+              <span>Usuario</span>
+              <small>Explorador Eco</small>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <input id="item-input" type="text" placeholder="Ej. botella de plástico" />
+            <button id="search-button">Buscar</button>
+          </div>
+
+          <div class="suggestions">
+            <button>Botella de plástico</button>
+            <button>Lata de aluminio</button>
+            <button>Bolsa plástica</button>
+            <button>Vidrio</button>
+            <button>Papel</button>
+            <button>+ Más objetos</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="cards-panel glass">
+          <h3>Explora y aprende</h3>
+          <div class="card-grid">
+            <article class="resource-card glass">
+              <div class="resource-icon plastic">P</div>
+              <h4>Plástico</h4>
+              <p>Descubre su impacto y degradación.</p>
+            </article>
+            <article class="resource-card glass">
+              <div class="resource-icon glass">V</div>
+              <h4>Vidrio</h4>
+              <p>Datos y formas de reutilizarlo.</p>
+            </article>
+            <article class="resource-card glass">
+              <div class="resource-icon metal">M</div>
+              <h4>Metal</h4>
+              <p>Reciclaje y efectos en el ambiente.</p>
+            </article>
+            <article class="resource-card glass">
+              <div class="resource-icon paper">P</div>
+              <h4>Papel</h4>
+              <p>Tiempo de degradación y reutilización.</p>
+            </article>
+            <article class="resource-card glass">
+              <div class="resource-icon organic">O</div>
+              <h4>Orgánico</h4>
+              <p>Compostaje y beneficios para el suelo.</p>
+            </article>
+          </div>
+        </article>
+
+        <div class="side-panel-grid">
+          <article class="top-list glass">
+            <div class="section-title">
+              <h3>Top residuos buscados</h3>
+              <span>Más consultados</span>
+            </div>
+            <ul class="top-list-items">
+              <li><span>Botella de plástico</span><strong>450 años</strong></li>
+              <li><span>Bolsa plástica</span><strong>150 años</strong></li>
+              <li><span>Lata de aluminio</span><strong>200 años</strong></li>
+              <li><span>Vaso desechable</span><strong>50 años</strong></li>
+              <li><span>Envase de vidrio</span><strong>4000 años</strong></li>
+            </ul>
+          </article>
+
+          <article class="cta-panel glass">
+            <h3>Transformemos el futuro juntos</h3>
+            <p>Cada búsqueda es un paso hacia un planeta más limpio.</p>
+            <button class="cta-button">Conoce más</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="result" class="result-panel glass hidden">
+        <div class="result-header">
+          <h2 id="result-title"></h2>
+          <span class="result-badge">Datos ambientales</span>
+        </div>
+        <p id="result-degradation"></p>
+        <p id="result-impact"></p>
+        <p id="result-reuse"></p>
+        <div class="tips-section">
+          <h3>Consejos para cuidar el planeta</h3>
+          <ul id="result-tips"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
